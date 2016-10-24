@@ -1,20 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen
+<PreferenceScreen xmlns:tools="http://schemas.android.com/tools"
     xmlns:android="http://schemas.android.com/apk/res/android">
     <PreferenceCategory android:title="@string/preference_title">
-        <CheckBoxPreference
-            android:key="checkbox_01_key"
-            android:title="@string/checkbox_01_title"
-            android:summary="@string/checkbox_01_summary" />
-        <CheckBoxPreference
-            android:key="checkbox_02_key"
-            android:title="@string/checkbox_02_title"
-            android:summary="@string/checkbox_02_summary" />
         <EditTextPreference
-            android:defaultValue="Default value"
+            android:defaultValue="5"
             android:selectAllOnFocus="true"
-            android:singleLine="true"
-            android:title="Edit text preference"
-            android:key="edit_text_preference_1" />
+            android:inputType="number"
+            android:title="Interval Time [sec]"
+            android:key="interval"
+            android:id="@+id/interval_time" />
     </PreferenceCategory>
 </PreferenceScreen>

@@ -15,55 +15,37 @@
     tools:context="com.example.tohn.wifichecker.MainActivity">
 
     <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:text="Scan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/button_scan"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/button_stop"
+            android:layout_toStartOf="@+id/button_stop"
+            android:layout_marginRight="48dp"
+            android:layout_marginEnd="48dp"
+            android:layout_weight="0.97" />
+
+    </LinearLayout>
+
+    <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="51dp">
-
-            <EditText
-                android:layout_width="105dp"
-                android:layout_height="wrap_content"
-                android:inputType="number"
-                android:ems="10"
-                android:id="@+id/interval" />
-
-            <TextView
-                android:text="[ms]"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView6"
-                android:layout_weight="1" />
-
-        </LinearLayout>
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
 
         <ListView
             android:layout_width="match_parent"
-            android:layout_height="368dp"
+            android:layout_height="428dp"
             android:id="@+id/list_ap"
             android:headerDividersEnabled="false" />
-
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="58dp">
-
-            <Button
-                android:text="Scan"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/button_scan"
-                android:layout_alignParentBottom="true"
-                android:layout_toLeftOf="@+id/button_stop"
-                android:layout_toStartOf="@+id/button_stop"
-                android:layout_marginRight="48dp"
-                android:layout_marginEnd="48dp"
-                android:layout_weight="0.97" />
-
-        </LinearLayout>
 
     </LinearLayout>
 

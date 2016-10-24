@@ -10,6 +10,7 @@ import java.util.TimerTask;
 
 import android.app.ListActivity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.wifi.WifiInfo;
 import android.net.wifi.WifiManager;
 import android.net.wifi.ScanResult;
@@ -46,9 +47,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-        EditText interval_num = (EditText) findViewById(R.id.interval);
-        interval_num.setText("5000");
 
         Button btn_check = (Button) findViewById(R.id.button_scan);
         View.OnClickListener btb1ClickListener = new View.OnClickListener() {
@@ -141,11 +139,11 @@ public class MainActivity extends AppCompatActivity {
 
     /** タイマーを開始する */
     private void startTimer() {
-        EditText interval_num = (EditText) findViewById(R.id.interval);
-        String interval_str = interval_num.getText().toString();
+        SharedPreferences prefs = getPreferences(this.MODE_PRIVATE);
+        int intNum = prefs.getInt("interval",5);
 
         int firstInterval = 0;
-        int interval = Integer.parseInt(interval_str);
+        int interval = intNum * 1000;
 
         // Timerオブジェクトの生成
         timer = new Timer();
