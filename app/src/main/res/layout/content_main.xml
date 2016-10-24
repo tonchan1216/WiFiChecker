@@ -38,13 +38,6 @@
                 android:id="@+id/textView6"
                 android:layout_weight="1" />
 
-            <EditText
-                android:layout_width="191dp"
-                android:layout_height="wrap_content"
-                android:inputType="textPersonName"
-                android:ems="10"
-                android:id="@+id/file_name"
-                android:hint="file name" />
         </LinearLayout>
 
         <ListView
@@ -69,18 +62,6 @@
                 android:layout_marginRight="48dp"
                 android:layout_marginEnd="48dp"
                 android:layout_weight="0.97" />
-
-            <Button
-                android:text="STOP"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="82dp"
-                android:layout_marginEnd="82dp"
-                android:id="@+id/button_stop"
-                android:layout_alignParentBottom="true"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true"
-                android:layout_weight="1" />
 
         </LinearLayout>
 

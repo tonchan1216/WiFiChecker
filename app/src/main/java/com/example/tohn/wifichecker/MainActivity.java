@@ -1,9 +1,9 @@
 package com.example.tohn.wifichecker;
 
+import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
+import java.io.FileWriter;
 import java.io.IOException;
-import java.io.OutputStreamWriter;
 import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
@@ -13,9 +13,8 @@ import android.net.wifi.WifiInfo;
 import android.net.wifi.WifiManager;
 import android.net.wifi.ScanResult;
 import android.os.Bundle;
+import android.os.Environment;
 import android.os.Handler;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
@@ -36,6 +35,8 @@ import static android.R.id.message;
 public class MainActivity extends AppCompatActivity {
     private Timer timer;
     private Handler handler = new Handler();
+    private int timer_status = 0;
+    private String file_name = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,28 +48,25 @@ public class MainActivity extends AppCompatActivity {
         EditText interval_num = (EditText) findViewById(R.id.interval);
         interval_num.setText("5000");
 
-        Button btn_start = (Button) findViewById(R.id.button_scan);
+        Button btn_check = (Button) findViewById(R.id.button_scan);
         View.OnClickListener btb1ClickListener = new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                EditText file_name = (EditText) findViewById(R.id.file_name);
-                String file_name_str = file_name.getText().toString();
 
-                if (! file_name_str.equals("")) {
+            public void onClick(View v) {
+                Button btn_check = (Button) findViewById(R.id.button_scan);
+                if (timer_status == 0) {
+                    makeSaveFile();
                     startTimer();
+                    btn_check.setText("STOP");
+                }
+
+                if (timer_status == 1) {
+                    stopTimer();
+                    btn_check.setText("SCAN");
                 }
             }
         };
-        btn_start.setOnClickListener(btb1ClickListener);
-
-        Button btn_stop = (Button) findViewById(R.id.button_stop);
-        View.OnClickListener btb2ClickListener = new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                stopTimer();
-            }
-        };
-        btn_stop.setOnClickListener(btb2ClickListener);
+        btn_check.setOnClickListener(btb1ClickListener);
     }
 
     @Override
@@ -115,23 +113,25 @@ public class MainActivity extends AppCompatActivity {
         time.setToNow();
         String date = time.year + "/" + (time.month+1) + "/" + time.monthDay + " " + time.hour + ":" + time.minute + ":" + time.second ;
 
-        EditText file_name = (EditText) findViewById(R.id.file_name);
-        String fileName = file_name.getText().toString();
+        String path = Environment.getExternalStorageDirectory().getPath();
+        File dir = new File(path+"/WiFiChecker");
+        File file = new File(dir.getAbsolutePath() + "/" + file_name);
 
         String[] aps = new String[apList.size()];
         for(int i=0; i<apList.size(); i++) {
             aps[i] = date + "," + apList.get(i).SSID + "," + apList.get(i).frequency + ", " + apList.get(i).level;
 
             try {
-                FileOutputStream outStream = openFileOutput(fileName + ".txt", MODE_APPEND|MODE_PRIVATE);
-                OutputStreamWriter writer = new OutputStreamWriter(outStream);
-                writer.write(aps[i]);
-                writer.flush();
-                writer.close();
+                FileWriter fw = new FileWriter(file, true);
+                fw.write(aps[i]);
+                fw.write("\r\n");
+                fw.close();
             } catch (FileNotFoundException e) {
                 e.printStackTrace();
+                Log.e("file_error","FileNotFound");
             } catch (IOException e) {
                 e.printStackTrace();
+                Log.e("file_error","IOException");
             }
         }
     }
@@ -160,6 +160,7 @@ public class MainActivity extends AppCompatActivity {
                         wifi.startScan();
                         echoScanData();
                         writeScanData();
+                        timer_status = 1;
                     }
                 });
             }
@@ -173,6 +174,24 @@ public class MainActivity extends AppCompatActivity {
         this.timer.cancel();
         this.timer.purge();
         this.timer = null;
+        timer_status = 0;
         Toast.makeText(this, "Stop Wi-Fi Logging", Toast.LENGTH_LONG).show();
+    }
+
+    private boolean makeSaveFile(){
+        Time time = new Time("Asia/Tokyo");
+        time.setToNow();
+        String path = Environment.getExternalStorageDirectory().getPath();
+        File dir = new File(path+"/WiFiChecker");
+        dir.mkdir();
+        file_name = time.year + (time.month+1) + time.monthDay + "-" + time.hour + time.minute + time.second + ".txt";
+        File file = new File(dir.getAbsolutePath() + "/" + file_name);
+
+        try{
+            return file.createNewFile();
+        }catch(IOException e){
+            System.out.println(e);
+            return false;
+        }
     }
 }
