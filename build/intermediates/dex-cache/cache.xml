@@ -21,39 +21,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\TOHN\AndroidStudioProjects\WiFiChecker\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.0.0\jars\libs\internal_impl-25.0.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="f2e3b9bc1ec25f652e8007ce7774c991e38f6a00">
-        <dex dex="C:\Users\TOHN\AndroidStudioProjects\WiFiChecker\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.0_49cded20304155173aee7e5da67aff7d1666be40\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="C:\Users\TOHN\AndroidStudioProjects\WiFiChecker\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.0.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
         sha1="8bc45ce1f63d1a391fd38b32a201be5a42f9c95d">
         <dex dex="C:\Users\TOHN\AndroidStudioProjects\WiFiChecker\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-25.0.0_0541a41239f77397c0d01fc613c6eed8fa91b455\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\TOHN\AndroidStudioProjects\WiFiChecker\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="5567666aba789b77a1463d7bcd13ba3f29fb60c0">
-        <dex dex="C:\Users\TOHN\AndroidStudioProjects\WiFiChecker\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_5009cd437f72107854a153671ef553bc965a069e\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\TOHN\AndroidStudioProjects\WiFiChecker\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.0.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="53a420cd4f49274db6bd43475f8006ba67ef6bbd">
-        <dex dex="C:\Users\TOHN\AndroidStudioProjects\WiFiChecker\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-25.0.0_a415602db1c5edda8ea2be908a43ad02c4e46dd1\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -66,15 +39,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\TOHN\AndroidStudioProjects\WiFiChecker\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.0.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="76fb65a4b41ea42dab8a1310ed772a2420c96b52">
-        <dex dex="C:\Users\TOHN\AndroidStudioProjects\WiFiChecker\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-25.0.0_67ddb8d58dc1d5d480dad446186063d11f590c01\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="C:\Users\TOHN\AndroidStudioProjects\WiFiChecker\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.0.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
@@ -84,30 +48,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\TOHN\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.0.0\support-annotations-25.0.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="a22d2cc94da87b254451fa8ed28afc30b4653773">
-        <dex dex="C:\Users\TOHN\AndroidStudioProjects\WiFiChecker\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.0.0_9216bd6439acfbe46571e49093d2707f9b266c4f\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="C:\Users\TOHN\AndroidStudioProjects\WiFiChecker\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.0.0\jars\libs\internal_impl-25.0.0.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
         sha1="3b61a70884adaf0be3fc06c70c801e3e6df13133">
         <dex dex="C:\Users\TOHN\AndroidStudioProjects\WiFiChecker\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.0_4bd4153ddca18e12d9abb939cc652d58c1ffa28d\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\TOHN\AndroidStudioProjects\WiFiChecker\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.0.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="4ccbcda5c72027c7f7c14be9ff8640d9cb0d8da0">
-        <dex dex="C:\Users\TOHN\AndroidStudioProjects\WiFiChecker\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-25.0.0_a277020e7f8277861c78d6067b25cd73517678c3\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -129,21 +75,93 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\TOHN\AndroidStudioProjects\WiFiChecker\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.0.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="C:\Users\TOHN\AndroidStudioProjects\WiFiChecker\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-25.0.0_b50434a8345fb87799e771ada0afdb48ca581deb\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="C:\Users\TOHN\AndroidStudioProjects\WiFiChecker\app\build\intermediates\exploded-aar\com.android.support\design\25.0.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
         sha1="26384be22ddc74cfe197ebda9edbc7d1fd8bd537">
         <dex dex="C:\Users\TOHN\AndroidStudioProjects\WiFiChecker\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-25.0.0_7d52137c1a7deb338613a7382c01abc7a86dd597\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\TOHN\AndroidStudioProjects\WiFiChecker\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="07daa0b6e1d455c82a38422ffe287c18823d339a">
+        <dex dex="C:\Users\TOHN\AndroidStudioProjects\WiFiChecker\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-25.0.0_7c475d42868fc8f1a5e9bc6fcbd916002f86ef8c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\TOHN\AndroidStudioProjects\WiFiChecker\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="e933f6bf7206435c44bb40df1800254da737e589">
+        <dex dex="C:\Users\TOHN\AndroidStudioProjects\WiFiChecker\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_b6eb1f64e989dca640e8e3982ac9e3ea9fd1acee\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\TOHN\AndroidStudioProjects\WiFiChecker\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.0.0\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="f2e3b9bc1ec25f652e8007ce7774c991e38f6a00">
+        <dex dex="C:\Users\TOHN\AndroidStudioProjects\WiFiChecker\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.0_49cded20304155173aee7e5da67aff7d1666be40\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\TOHN\AndroidStudioProjects\WiFiChecker\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="45627e9fae1d3935b8052f25713ea99be8277f09">
+        <dex dex="C:\Users\TOHN\AndroidStudioProjects\WiFiChecker\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_5009cd437f72107854a153671ef553bc965a069e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\TOHN\AndroidStudioProjects\WiFiChecker\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="53a420cd4f49274db6bd43475f8006ba67ef6bbd">
+        <dex dex="C:\Users\TOHN\AndroidStudioProjects\WiFiChecker\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-25.0.0_a415602db1c5edda8ea2be908a43ad02c4e46dd1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\TOHN\AndroidStudioProjects\WiFiChecker\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="76fb65a4b41ea42dab8a1310ed772a2420c96b52">
+        <dex dex="C:\Users\TOHN\AndroidStudioProjects\WiFiChecker\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-25.0.0_67ddb8d58dc1d5d480dad446186063d11f590c01\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\TOHN\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.0.0\support-annotations-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="a22d2cc94da87b254451fa8ed28afc30b4653773">
+        <dex dex="C:\Users\TOHN\AndroidStudioProjects\WiFiChecker\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.0.0_9216bd6439acfbe46571e49093d2707f9b266c4f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\TOHN\AndroidStudioProjects\WiFiChecker\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="4ccbcda5c72027c7f7c14be9ff8640d9cb0d8da0">
+        <dex dex="C:\Users\TOHN\AndroidStudioProjects\WiFiChecker\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-25.0.0_a277020e7f8277861c78d6067b25cd73517678c3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\TOHN\AndroidStudioProjects\WiFiChecker\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\TOHN\AndroidStudioProjects\WiFiChecker\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-25.0.0_b50434a8345fb87799e771ada0afdb48ca581deb\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -162,24 +180,6 @@
         revision="24.0.3"
         sha1="d29714cc76b38157e3cbd034c66e1ec808eb4c19">
         <dex dex="C:\Users\TOHN\AndroidStudioProjects\WiFiChecker\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-25.0.0_aca686ffc443a0b5d5d300b07ea8af6e67f0de6c\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\TOHN\AndroidStudioProjects\WiFiChecker\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="a5157b6da7a855802abd0fd535f9e5cb51b6a6ec">
-        <dex dex="C:\Users\TOHN\AndroidStudioProjects\WiFiChecker\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_b6eb1f64e989dca640e8e3982ac9e3ea9fd1acee\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\TOHN\AndroidStudioProjects\WiFiChecker\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.0.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="07daa0b6e1d455c82a38422ffe287c18823d339a">
-        <dex dex="C:\Users\TOHN\AndroidStudioProjects\WiFiChecker\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-25.0.0_7c475d42868fc8f1a5e9bc6fcbd916002f86ef8c\classes.dex" />
     </item>
 
 </items>
