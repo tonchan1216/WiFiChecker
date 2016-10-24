@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <PreferenceCategory android:title="カテゴリ１"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <EditTextPreference
+            android:key="key_editText"
+            android:title="Edit Text"
+            android:summary="Edit Text Summary"
+            android:dialogTitle="Dialog Title"
+            android:dialogMessage="Dialog Message"
+            android:defaultValue="Default Value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <ListPreference
+            android:key="key_list"
+            android:title="List Title"
+            android:summary="List Summary"
+            android:dialogTitle="Dialog Title"
+            android:entries="@array/listEntries"
+            android:entryValues="@array/listEntryValues"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="カテゴリ２"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <CheckBoxPreference
+            android:key="key_checkBox"
+            android:title="CheckBox Item1"
+            android:summary="Checkbox1 summary"
+            android:summaryOn="Checkbox1 ON"
+            android:summaryOff="Checkbox1 OFF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </PreferenceCategory>
+</PreferenceScreen>
