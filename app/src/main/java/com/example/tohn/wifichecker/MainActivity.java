@@ -36,7 +36,8 @@ public class MainActivity extends AppCompatActivity {
     private Timer timer;
     private Handler handler = new Handler();
     private int timer_status = 0;
-    private String file_name = "";
+    private String file_name;
+    private String dir_name;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,9 +56,10 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Button btn_check = (Button) findViewById(R.id.button_scan);
                 if (timer_status == 0) {
-                    makeSaveFile();
-                    startTimer();
-                    btn_check.setText("STOP");
+                    if(makeSaveFile()) {
+                        startTimer();
+                        btn_check.setText("STOP");
+                    }
                 }
 
                 if (timer_status == 1) {
@@ -113,9 +115,7 @@ public class MainActivity extends AppCompatActivity {
         time.setToNow();
         String date = time.year + "/" + (time.month+1) + "/" + time.monthDay + " " + time.hour + ":" + time.minute + ":" + time.second ;
 
-        String path = Environment.getExternalStorageDirectory().getPath();
-        File dir = new File(path+"/WiFiChecker");
-        File file = new File(dir.getAbsolutePath() + "/" + file_name);
+        File file = new File(dir_name + "/" + file_name);
 
         String[] aps = new String[apList.size()];
         for(int i=0; i<apList.size(); i++) {
@@ -158,8 +158,8 @@ public class MainActivity extends AppCompatActivity {
                     public void run() {
                         WifiManager wifi = (WifiManager)getSystemService(WIFI_SERVICE);
                         wifi.startScan();
-                        echoScanData();
                         writeScanData();
+                        echoScanData();
                         timer_status = 1;
                     }
                 });
@@ -184,13 +184,19 @@ public class MainActivity extends AppCompatActivity {
         String path = Environment.getExternalStorageDirectory().getPath();
         File dir = new File(path+"/WiFiChecker");
         dir.mkdir();
-        file_name = time.year + (time.month+1) + time.monthDay + "-" + time.hour + time.minute + time.second + ".txt";
-        File file = new File(dir.getAbsolutePath() + "/" + file_name);
+        File dir_day = new File(path+"/WiFiChecker/"+ time.year + "-" + (time.month+1) + "-" + time.monthDay);
+        dir_day.mkdir();
+        dir_name = dir_day.getPath();
+
+        String now = String.format("%02d%02d%02d", time.hour, time.minute, time.second);
+        file_name = now + ".csv";
+        File file = new File(dir_day.getAbsolutePath() + "/" + file_name);
 
         try{
             return file.createNewFile();
         }catch(IOException e){
             System.out.println(e);
+            Toast.makeText(this, "Failed make File!", Toast.LENGTH_LONG).show();
             return false;
         }
     }
