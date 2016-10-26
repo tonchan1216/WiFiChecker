@@ -8,10 +8,8 @@ import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
 
-import android.app.ListActivity;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.net.wifi.WifiInfo;
 import android.net.wifi.WifiManager;
 import android.net.wifi.ScanResult;
 import android.os.Bundle;
@@ -25,13 +23,9 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ListView;
-import android.widget.TextView;
 import android.text.format.Time;
 import android.widget.Toast;
-
-import static android.R.id.message;
 
 
 public class MainActivity extends AppCompatActivity {
