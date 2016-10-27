@@ -5,7 +5,7 @@ android {
     buildToolsVersion "24.0.3"
     defaultConfig {
         applicationId "com.example.tohn.wifichecker"
-        minSdkVersion 15
+        minSdkVersion 21
         targetSdkVersion 25
         versionCode 1
         versionName "1.0"
@@ -24,6 +24,8 @@ android {
             minifyEnabled false
             zipAlignEnabled true
         }
+    }
+    productFlavors {
     }
 }
 
